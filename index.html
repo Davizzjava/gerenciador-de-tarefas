@@ -1,20 +1,33 @@
-<div class="app-wrapper">
-  <header>
-    <div class="header-titles">
-      <h1>Meu Dia ☀️</h1>
-      <p id="contador">0 tarefas pendentes</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-wrapper">
+    <header>
+      <div class="header-titles">
+        <h1>Meu Dia ☀️</h1>
+        <p id="contador">0 tarefas pendentes</p>
+      </div>
+    </header>
+
+    <div class="input-group">
+      <input type="text" id="novaTarefa" placeholder="O que vamos fazer hoje?">
+      <button class="btn-add" onclick="adicionarTarefa()" title="Adicionar">+</button>
     </div>
-  </header>
 
-  <div class="input-group">
-    <input type="text" id="novaTarefa" placeholder="O que vamos fazer hoje?">
-    <button class="btn-add" onclick="adicionarTarefa()" title="Adicionar">+</button>
+    <ul id="listaTarefas">
+      </ul>
+
+    <div id="estadoVazio" class="empty-state">
+      <p>Tudo tranquilo por aqui! Aproveite o seu dia. 🌴</p>
+    </div>
   </div>
-
-  <ul id="listaTarefas">
-    </ul>
-
-  <div id="estadoVazio" class="empty-state">
-    <p>Tudo tranquilo por aqui! Aproveite o seu dia. 🌴</p>
-  </div>
-</div>
+  <script src="script.js"></script>
+</body>
+</html>
